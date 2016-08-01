@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=640,user-scalable=no">
+    <meta charset="UTF-8">
+    <title>交流会</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/lib/jquery.js"></script>
+    <script src="js/meet.js"></script>
+</head>
+<body>
+
+    <div id="page_meet">
+        <!--顶栏-->
+        <div id="tip">
+            <a href="home.html"></a>
+        </div>
+
+        <!--会议统计信息分类栏-->
+
+        <!--网格经理没有分类栏，直接显现会议信息-->
+        <div id="classify" >
+            <!--按钮-->
+            <div id="cBtn"></div>
+
+            <!--中央工作人员-->
+            <div id="center" style="display: block">
+                <li class="">
+                    <span class="icon"></span>
+                    <p class="lev">FY17 Q3</p>
+                    <a href="#">CKA东区</a>
+                    <a href="#">CKA西区</a>
+                    <a href="#">CKA南区</a>
+                    <a href="#">CKA北区</a>
+                </li>
+            </div>
+
+            <!--区域工作人员-->
+
+            <div id="area" style="display: none">
+                <li>
+                    <span class="icon"></span>
+                    <p class="lev">FY17 Q3</p>
+                </li>
+                <li>
+                    <span class="icon"></span>
+                    <p class="lev">我的会议</p>
+                </li>
+            </div>
+
+            <!--省级工作人员-->
+
+            <div id="province" style="display: none">
+                <li>
+                    <span class="icon"></span>
+                    <p class="lev">FY17 Q3</p>
+                </li>
+                <li>
+                    <span class="icon"></span>
+                    <p class="lev">我的会议</p>
+                </li>
+            </div>
+
+
+            <!--网格经理，没有分类菜单栏-->
+
+
+        </div>
+
+        <!--会议统计信息-->
+        <div id="meet_con">
+            <!--搜索框-->
+            <div id="search">
+                <form action="">
+                    <input type="search" placeholder="请输入会议ID进行搜索">
+                    <input type="submit" value="" id="submit">
+                </form>
+            </div>
+            <ul>
+
+                <!--###########第一条信息为统计信息，加 header 类 ######### -->
+
+                <!--我的会议的第一条会议的样式-->
+                <li class="me">
+                    <div class="name">Jason</div>
+                    <div class="my_meet">我的会议 <span>22</span> 场</div>
+                    <table>
+                        <!--会议报名人数-->
+                        <td class="sign">报名 <span>6600</span></td>
+                        <!--实际到场人数-->
+                        <td class="real">参与 <span>5500</span></td>
+                    </table>
+                </li>
+
+                <!--其它的样式的会议-->
+
+                <!--<li class="header">-->
+                    <!--<table>-->
+                        <!--<tr class="tit">-->
+                            <!--<td>全部</td>-->
+                        <!--</tr>-->
+                        <!--<tr class="count">-->
+                            <!--&lt;!&ndash;会议总数&ndash;&gt;-->
+                            <!--<td class="all_meet">会议<span>500</span>场</td>-->
+                            <!--&lt;!&ndash;会议报名人数&ndash;&gt;-->
+                            <!--<td class="sign">报名<span>660</span></td>-->
+                            <!--&lt;!&ndash;实际到场人数&ndash;&gt;-->
+                            <!--<td class="real">参与<span>550</span></td>-->
+                        <!--</tr>-->
+                    <!--</table>-->
+                <!--</li>-->
+
+
+
+                <!--会议数据格式-->
+                <li class="info">
+                    <table>
+                        <!--链接-->
+                        <a href="meet_info.html" class="link"></a>
+
+                        <tr class="tit">
+                            <!--会议名-->
+                            <td class="t">FY17 Q3渠道拓展客户交流会</td>
+                            <!--会议二维码,固定宽度 45 px-->
+                            <td class="ewm">
+                                <img src="images/meet/ewm.png" meeting_id="123456" meeting_qrcode="images/meet/ewm.png" alt="" width="45px"/>
+                            </td>
+
+                        </tr>
+                        <tr class="count">
+                            <!--会议报名人数-->
+                            <td class="sign">报名<span>6600</span></td>
+                            <!--实际到场人数-->
+                            <td class="real">参与<span>5500</span></td>
+                            <!--会议时间-->
+                            <td class="time">2016.07.26</td>
+                            <!--会议ID-->
+                            <td class="id">ID:<span>6666</span></td>
+                        </tr>
+                    </table>
+                </li>
+
+
+                <!--测试使用-->
+                <!--测试使用-->
+                <!--测试使用-->
+
+                <li class="info">
+                    <table>
+                        <!--链接-->
+                        <a href="meet_info.html" class="link"></a>
+
+                        <tr class="tit">
+                            <!--会议名-->
+                            <td class="t">FY17 Q3渠道拓展客户交流会</td>
+                            <!--会议二维码,固定宽度 45 px-->
+                            <td class="ewm">
+                                <img src="images/meet/ewm.png" meeting_id="123456" meeting_qrcode="images/meet/ewm.png" alt="" width="45px"/>
+                            </td>
+
+                        </tr>
+                        <tr class="count">
+                            <!--会议报名人数-->
+                            <td class="sign">报名<span>6600</span></td>
+                            <!--实际到场人数-->
+                            <td class="real">参与<span>5500</span></td>
+                            <!--会议时间-->
+                            <td class="time">2016.07.26</td>
+                            <!--会议ID-->
+                            <td class="id">ID:<span>6666</span></td>
+                        </tr>
+                    </table>
+                </li>
+                <li class="info">
+                    <table>
+                        <!--链接-->
+                        <a href="meet_info.html" class="link"></a>
+
+                        <tr class="tit">
+                            <!--会议名-->
+                            <td class="t">FY17 Q3渠道拓展客户交流会</td>
+                            <!--会议二维码,固定宽度 45 px-->
+                            <td class="ewm">
+                                <img src="images/meet/ewm.png" meeting_id="123456" meeting_qrcode="images/meet/ewm.png" alt="" width="45px"/>
+                            </td>
+
+                        </tr>
+                        <tr class="count">
+                            <!--会议报名人数-->
+                            <td class="sign">报名<span>6600</span></td>
+                            <!--实际到场人数-->
+                            <td class="real">参与<span>5500</span></td>
+                            <!--会议时间-->
+                            <td class="time">2016.07.26</td>
+                            <!--会议ID-->
+                            <td class="id">ID:<span>6666</span></td>
+                        </tr>
+                    </table>
+                </li>
+                <li class="info">
+                    <table>
+                        <!--链接-->
+                        <a href="meet_info.html" class="link"></a>
+
+                        <tr class="tit">
+                            <!--会议名-->
+                            <td class="t">FY17 Q3渠道拓展客户交流会</td>
+                            <!--会议二维码,固定宽度 45 px-->
+                            <td class="ewm">
+                                <img src="images/meet/ewm.png" alt="" width="45px"/>
+                            </td>
+
+                        </tr>
+                        <tr class="count">
+                            <!--会议报名人数-->
+                            <td class="sign">报名<span>6600</span></td>
+                            <!--实际到场人数-->
+                            <td class="real">参与<span>5500</span></td>
+                            <!--会议时间-->
+                            <td class="time">2016.07.26</td>
+                            <!--会议ID-->
+                            <td class="id">ID:<span>6666</span></td>
+                        </tr>
+                    </table>
+                </li>
+                <li class="info">
+                    <table>
+                        <!--链接-->
+                        <a href="meet_info.html" class="link"></a>
+
+                        <tr class="tit">
+                            <!--会议名-->
+                            <td class="t">FY17 Q3渠道拓展客户交流会</td>
+                            <!--会议二维码,固定宽度 45 px-->
+                            <td class="ewm">
+                                <img src="images/meet/ewm.png" alt="" width="45px"/>
+                            </td>
+
+                        </tr>
+                        <tr class="count">
+                            <!--会议报名人数-->
+                            <td class="sign">报名<span>6600</span></td>
+                            <!--实际到场人数-->
+                            <td class="real">参与<span>5500</span></td>
+                            <!--会议时间-->
+                            <td class="time">2016.07.26</td>
+                            <!--会议ID-->
+                            <td class="id">ID:<span>6666</span></td>
+                        </tr>
+                    </table>
+                </li>
+                <li class="info">
+                    <table>
+                        <!--链接-->
+                        <a href="meet_info.html" class="link"></a>
+
+                        <tr class="tit">
+                            <!--会议名-->
+                            <td class="t">FY17 Q3渠道拓展客户交流会</td>
+                            <!--会议二维码,固定宽度 45 px-->
+                            <td class="ewm">
+                                <img src="images/meet/ewm.png" alt="" width="45px"/>
+                            </td>
+
+                        </tr>
+                        <tr class="count">
+                            <!--会议报名人数-->
+                            <td class="sign">报名<span>6600</span></td>
+                            <!--实际到场人数-->
+                            <td class="real">参与<span>5500</span></td>
+                            <!--会议时间-->
+                            <td class="time">2016.07.26</td>
+                            <!--会议ID-->
+                            <td class="id">ID:<span>6666</span></td>
+                        </tr>
+                    </table>
+                </li>
+                <li class="info">
+                    <table>
+                        <!--链接-->
+                        <a href="meet_info.html" class="link"></a>
+
+                        <tr class="tit">
+                            <!--会议名-->
+                            <td class="t">FY17 Q3渠道拓展客户交流会</td>
+                            <!--会议二维码,固定宽度 45 px-->
+                            <td class="ewm">
+                                <img src="images/meet/ewm.png" alt="" width="45px"/>
+                            </td>
+
+                        </tr>
+                        <tr class="count">
+                            <!--会议报名人数-->
+                            <td class="sign">报名<span>6600</span></td>
+                            <!--实际到场人数-->
+                            <td class="real">参与<span>5500</span></td>
+                            <!--会议时间-->
+                            <td class="time">2016.07.26</td>
+                            <!--会议ID-->
+                            <td class="id">ID:<span>6666</span></td>
+                        </tr>
+                    </table>
+                </li>
+                <li class="info">
+                    <table>
+                        <!--链接-->
+                        <a href="meet_info.html" class="link"></a>
+
+                        <tr class="tit">
+                            <!--会议名-->
+                            <td class="t">FY17 Q3渠道拓展客户交流会</td>
+                            <!--会议二维码,固定宽度 45 px-->
+                            <td class="ewm">
+                                <img src="images/meet/ewm.png" alt="" width="45px"/>
+                            </td>
+
+                        </tr>
+                        <tr class="count">
+                            <!--会议报名人数-->
+                            <td class="sign">报名<span>6600</span></td>
+                            <!--实际到场人数-->
+                            <td class="real">参与<span>5500</span></td>
+                            <!--会议时间-->
+                            <td class="time">2016.07.26</td>
+                            <!--会议ID-->
+                            <td class="id">ID:<span>6666</span></td>
+                        </tr>
+                    </table>
+                </li>
+                <li class="info">
+                    <table>
+                        <!--链接-->
+                        <a href="meet_info.html" class="link"></a>
+
+                        <tr class="tit">
+                            <!--会议名-->
+                            <td class="t">FY17 Q3渠道拓展客户交流会</td>
+                            <!--会议二维码,固定宽度 45 px-->
+                            <td class="ewm">
+                                <img src="images/meet/ewm.png" alt="" width="45px"/>
+                            </td>
+
+                        </tr>
+                        <tr class="count">
+                            <!--会议报名人数-->
+                            <td class="sign">报名<span>6600</span></td>
+                            <!--实际到场人数-->
+                            <td class="real">参与<span>5500</span></td>
+                            <!--会议时间-->
+                            <td class="time">2016.07.26</td>
+                            <!--会议ID-->
+                            <td class="id">ID:<span>6666</span></td>
+                        </tr>
+                    </table>
+                </li>
+                <li class="info">
+                    <table>
+                        <!--链接-->
+                        <a href="meet_info.html" class="link"></a>
+
+                        <tr class="tit">
+                            <!--会议名-->
+                            <td class="t">FY17 Q3渠道拓展客户交流会</td>
+                            <!--会议二维码,固定宽度 45 px-->
+                            <td class="ewm">
+                                <img src="images/meet/ewm.png" alt="" width="45px"/>
+                            </td>
+
+                        </tr>
+                        <tr class="count">
+                            <!--会议报名人数-->
+                            <td class="sign">报名<span>6600</span></td>
+                            <!--实际到场人数-->
+                            <td class="real">参与<span>5500</span></td>
+                            <!--会议时间-->
+                            <td class="time">2016.07.26</td>
+                            <!--会议ID-->
+                            <td class="id">ID:<span>6666</span></td>
+                        </tr>
+                    </table>
+                </li>
+                <li class="info">
+                    <table>
+                        <!--链接-->
+                        <a href="meet_info.html" class="link"></a>
+
+                        <tr class="tit">
+                            <!--会议名-->
+                            <td class="t">FY17 Q3渠道拓展客户交流会</td>
+                            <!--会议二维码,固定宽度 45 px-->
+                            <td class="ewm">
+                                <img src="images/meet/ewm.png" alt="" width="45px"/>
+                            </td>
+
+                        </tr>
+                        <tr class="count">
+                            <!--会议报名人数-->
+                            <td class="sign">报名<span>6600</span></td>
+                            <!--实际到场人数-->
+                            <td class="real">参与<span>5500</span></td>
+                            <!--会议时间-->
+                            <td class="time">2016.07.26</td>
+                            <!--会议ID-->
+                            <td class="id">ID:<span>6666</span></td>
+                        </tr>
+                    </table>
+                </li>
+                <li class="info">
+                    <table>
+                        <!--链接-->
+                        <a href="meet_info.html" class="link"></a>
+
+                        <tr class="tit">
+                            <!--会议名-->
+                            <td class="t">FY17 Q3渠道拓展客户交流会</td>
+                            <!--会议二维码,固定宽度 45 px-->
+                            <td class="ewm">
+                                <img src="images/meet/ewm.png" alt="" width="45px"/>
+                            </td>
+
+                        </tr>
+                        <tr class="count">
+                            <!--会议报名人数-->
+                            <td class="sign">报名<span>6600</span></td>
+                            <!--实际到场人数-->
+                            <td class="real">参与<span>5500</span></td>
+                            <!--会议时间-->
+                            <td class="time">2016.07.26</td>
+                            <!--会议ID-->
+                            <td class="id">ID:<span>6666</span></td>
+                        </tr>
+                    </table>
+                </li>
+                <li class="info">
+                    <table>
+                        <!--链接-->
+                        <a href="meet_info.html" class="link"></a>
+
+                        <tr class="tit">
+                            <!--会议名-->
+                            <td class="t">FY17 Q3渠道拓展客户交流会</td>
+                            <!--会议二维码,固定宽度 45 px-->
+                            <td class="ewm">
+                                <img src="images/meet/ewm.png" alt="" width="45px"/>
+                            </td>
+
+                        </tr>
+                        <tr class="count">
+                            <!--会议报名人数-->
+                            <td class="sign">报名<span>6600</span></td>
+                            <!--实际到场人数-->
+                            <td class="real">参与<span>5500</span></td>
+                            <!--会议时间-->
+                            <td class="time">2016.07.26</td>
+                            <!--会议ID-->
+                            <td class="id">ID:<span>6666</span></td>
+                        </tr>
+                    </table>
+                </li>
+                <li class="info">
+                    <table>
+                        <!--链接-->
+                        <a href="meet_info.html" class="link"></a>
+
+                        <tr class="tit">
+                            <!--会议名-->
+                            <td class="t">FY17 Q3渠道拓展客户交流会</td>
+                            <!--会议二维码,固定宽度 45 px-->
+                            <td class="ewm">
+                                <img src="images/meet/ewm.png" alt="" width="45px"/>
+                            </td>
+
+                        </tr>
+                        <tr class="count">
+                            <!--会议报名人数-->
+                            <td class="sign">报名<span>6600</span></td>
+                            <!--实际到场人数-->
+                            <td class="real">参与<span>5500</span></td>
+                            <!--会议时间-->
+                            <td class="time">2016.07.26</td>
+                            <!--会议ID-->
+                            <td class="id">ID:<span>6666</span></td>
+                        </tr>
+                    </table>
+                </li>
+                <li class="info">
+                    <table>
+                        <!--链接-->
+                        <a href="meet_info.html" class="link"></a>
+
+                        <tr class="tit">
+                            <!--会议名-->
+                            <td class="t">FY17 Q3渠道拓展客户交流会</td>
+                            <!--会议二维码,固定宽度 45 px-->
+                            <td class="ewm">
+                                <img src="images/meet/ewm.png" alt="" width="45px"/>
+                            </td>
+
+                        </tr>
+                        <tr class="count">
+                            <!--会议报名人数-->
+                            <td class="sign">报名<span>6600</span></td>
+                            <!--实际到场人数-->
+                            <td class="real">参与<span>5500</span></td>
+                            <!--会议时间-->
+                            <td class="time">2016.07.26</td>
+                            <!--会议ID-->
+                            <td class="id">ID:<span>6666</span></td>
+                        </tr>
+                    </table>
+                </li>
+                <li class="info">
+                    <table>
+                        <!--链接-->
+                        <a href="meet_info.html" class="link"></a>
+
+                        <tr class="tit">
+                            <!--会议名-->
+                            <td class="t">FY17 Q3渠道拓展客户交流会</td>
+                            <!--会议二维码,固定宽度 45 px-->
+                            <td class="ewm">
+                                <img src="images/meet/ewm.png" alt="" width="45px"/>
+                            </td>
+
+                        </tr>
+                        <tr class="count">
+                            <!--会议报名人数-->
+                            <td class="sign">报名<span>6600</span></td>
+                            <!--实际到场人数-->
+                            <td class="real">参与<span>5500</span></td>
+                            <!--会议时间-->
+                            <td class="time">2016.07.26</td>
+                            <!--会议ID-->
+                            <td class="id">ID:<span>6666</span></td>
+                        </tr>
+                    </table>
+                </li>
+                <li class="info">
+                    <table>
+                        <!--链接-->
+                        <a href="meet_info.html" class="link"></a>
+
+                        <tr class="tit">
+                            <!--会议名-->
+                            <td class="t">FY17 Q3渠道拓展客户交流会</td>
+                            <!--会议二维码,固定宽度 45 px-->
+                            <td class="ewm">
+                                <img src="images/meet/ewm.png" alt="" width="45px"/>
+                            </td>
+
+                        </tr>
+                        <tr class="count">
+                            <!--会议报名人数-->
+                            <td class="sign">报名<span>6600</span></td>
+                            <!--实际到场人数-->
+                            <td class="real">参与<span>5500</span></td>
+                            <!--会议时间-->
+                            <td class="time">2016.07.26</td>
+                            <!--会议ID-->
+                            <td class="id">ID:<span>6666</span></td>
+                        </tr>
+                    </table>
+                </li>
+                <li class="info">
+                    <table>
+                        <!--链接-->
+                        <a href="meet_info.html" class="link"></a>
+
+                        <tr class="tit">
+                            <!--会议名-->
+                            <td class="t">FY17 Q3渠道拓展客户交流会</td>
+                            <!--会议二维码,固定宽度 45 px-->
+                            <td class="ewm">
+                                <img src="images/meet/ewm.png" alt="" width="45px"/>
+                            </td>
+
+                        </tr>
+                        <tr class="count">
+                            <!--会议报名人数-->
+                            <td class="sign">报名<span>6600</span></td>
+                            <!--实际到场人数-->
+                            <td class="real">参与<span>5500</span></td>
+                            <!--会议时间-->
+                            <td class="time">2016.07.26</td>
+                            <!--会议ID-->
+                            <td class="id">ID:<span>6666</span></td>
+                        </tr>
+                    </table>
+                </li>
+                <li class="info">
+                    <table>
+                        <!--链接-->
+                        <a href="meet_info.html" class="link"></a>
+
+                        <tr class="tit">
+                            <!--会议名-->
+                            <td class="t">FY17 Q3渠道拓展客户交流会</td>
+                            <!--会议二维码,固定宽度 45 px-->
+                            <td class="ewm">
+                                <img src="images/meet/ewm.png" alt="" width="45px"/>
+                            </td>
+
+                        </tr>
+                        <tr class="count">
+                            <!--会议报名人数-->
+                            <td class="sign">报名<span>6600</span></td>
+                            <!--实际到场人数-->
+                            <td class="real">参与<span>5500</span></td>
+                            <!--会议时间-->
+                            <td class="time">2016.07.26</td>
+                            <!--会议ID-->
+                            <td class="id">ID:<span>6666</span></td>
+                        </tr>
+                    </table>
+                </li>
+                <li class="info">
+                    <table>
+                        <!--链接-->
+                        <a href="meet_info.html" class="link"></a>
+
+                        <tr class="tit">
+                            <!--会议名-->
+                            <td class="t">FY17 Q3渠道拓展客户交流会</td>
+                            <!--会议二维码,固定宽度 45 px-->
+                            <td class="ewm">
+                                <img src="images/meet/ewm.png" alt="" width="45px"/>
+                            </td>
+
+                        </tr>
+                        <tr class="count">
+                            <!--会议报名人数-->
+                            <td class="sign">报名<span>6600</span></td>
+                            <!--实际到场人数-->
+                            <td class="real">参与<span>5500</span></td>
+                            <!--会议时间-->
+                            <td class="time">2016.07.26</td>
+                            <!--会议ID-->
+                            <td class="id">ID:<span>6666</span></td>
+                        </tr>
+                    </table>
+                </li>
+                <li class="info">
+                    <table>
+                        <!--链接-->
+                        <a href="meet_info.html" class="link"></a>
+
+                        <tr class="tit">
+                            <!--会议名-->
+                            <td class="t">FY17 Q3渠道拓展客户交流会</td>
+                            <!--会议二维码,固定宽度 45 px-->
+                            <td class="ewm">
+                                <img src="images/meet/ewm.png" alt="" width="45px"/>
+                            </td>
+
+                        </tr>
+                        <tr class="count">
+                            <!--会议报名人数-->
+                            <td class="sign">报名<span>6600</span></td>
+                            <!--实际到场人数-->
+                            <td class="real">参与<span>5500</span></td>
+                            <!--会议时间-->
+                            <td class="time">2016.07.26</td>
+                            <!--会议ID-->
+                            <td class="id">ID:<span>6666</span></td>
+                        </tr>
+                    </table>
+                </li>
+                <li class="info">
+                    <table>
+                        <!--链接-->
+                        <a href="meet_info.html" class="link"></a>
+
+                        <tr class="tit">
+                            <!--会议名-->
+                            <td class="t">FY17 Q3渠道拓展客户交流会</td>
+                            <!--会议二维码,固定宽度 45 px-->
+                            <td class="ewm">
+                                <img src="images/meet/ewm.png" alt="" width="45px"/>
+                            </td>
+
+                        </tr>
+                        <tr class="count">
+                            <!--会议报名人数-->
+                            <td class="sign">报名<span>6600</span></td>
+                            <!--实际到场人数-->
+                            <td class="real">参与<span>5500</span></td>
+                            <!--会议时间-->
+                            <td class="time">2016.07.26</td>
+                            <!--会议ID-->
+                            <td class="id">ID:<span>6666</span></td>
+                        </tr>
+                    </table>
+                </li>
+                <li class="info">
+                    <table>
+                        <!--链接-->
+                        <a href="meet_info.html" class="link"></a>
+
+                        <tr class="tit">
+                            <!--会议名-->
+                            <td class="t">FY17 Q3渠道拓展客户交流会</td>
+                            <!--会议二维码,固定宽度 45 px-->
+                            <td class="ewm">
+                                <img src="images/meet/ewm.png" alt="" width="45px"/>
+                            </td>
+
+                        </tr>
+                        <tr class="count">
+                            <!--会议报名人数-->
+                            <td class="sign">报名<span>6600</span></td>
+                            <!--实际到场人数-->
+                            <td class="real">参与<span>5500</span></td>
+                            <!--会议时间-->
+                            <td class="time">2016.07.26</td>
+                            <!--会议ID-->
+                            <td class="id">ID:<span>6666</span></td>
+                        </tr>
+                    </table>
+                </li>
+                <li class="info">
+                    <table>
+                        <!--链接-->
+                        <a href="meet_info.html" class="link"></a>
+
+                        <tr class="tit">
+                            <!--会议名-->
+                            <td class="t">FY17 Q3渠道拓展客户交流会</td>
+                            <!--会议二维码,固定宽度 45 px-->
+                            <td class="ewm">
+                                <img src="images/meet/ewm.png" alt="" width="45px"/>
+                            </td>
+
+                        </tr>
+                        <tr class="count">
+                            <!--会议报名人数-->
+                            <td class="sign">报名<span>6600</span></td>
+                            <!--实际到场人数-->
+                            <td class="real">参与<span>5500</span></td>
+                            <!--会议时间-->
+                            <td class="time">2016.07.26</td>
+                            <!--会议ID-->
+                            <td class="id">ID:<span>6666</span></td>
+                        </tr>
+                    </table>
+                </li>
+                <li class="info">
+                    <table>
+                        <!--链接-->
+                        <a href="meet_info.html" class="link"></a>
+
+                        <tr class="tit">
+                            <!--会议名-->
+                            <td class="t">FY17 Q3渠道拓展客户交流会</td>
+                            <!--会议二维码,固定宽度 45 px-->
+                            <td class="ewm">
+                                <img src="images/meet/ewm.png" alt="" width="45px"/>
+                            </td>
+
+                        </tr>
+                        <tr class="count">
+                            <!--会议报名人数-->
+                            <td class="sign">报名<span>6600</span></td>
+                            <!--实际到场人数-->
+                            <td class="real">参与<span>5500</span></td>
+                            <!--会议时间-->
+                            <td class="time">2016.07.26</td>
+                            <!--会议ID-->
+                            <td class="id">ID:<span>6666</span></td>
+                        </tr>
+                    </table>
+                </li>
+                <!--测试使用-->
+                <!--测试使用-->
+                <!--测试使用-->
+
+                <!--没有会议的时候显现(display = block ),(没有 class=info，第一行的统计数据还在)  -->
+                <div class="nomeet" style="display: none"></div>
+
+            </ul>
+        </div>
+    </div>
+
+    <div id="page_ewm">
+        <div id="con">
+            <img src="" alt="" class="show_ewm" width="317px"/>
+            <div class="id">ID:<span>6666</span></div>
+            <div class="close"></div>
+        </div>
+
+    </div>
+</body>
+</html>

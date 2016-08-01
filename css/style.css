@@ -1,0 +1,2159 @@
+
+@font-face{
+    font-family:'delle';
+    src: url('../font/MuseoSansForDell-300.otf');
+}
+
+*{
+    margin:0px;
+    padding:0px;
+    font-family: delle;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+html,
+body{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+tr,td{
+    margin: 0px;
+    padding: 0px;
+    border: none;
+}
+
+.title{
+    width: 640px;
+    position: absolute;
+    top: 170px;
+}
+.title p{
+    text-align: center;
+    font-size: 48px;
+    font-weight: bold;
+    color: white;
+    line-height:65px ;
+}
+.title .big{
+    font-size: 60px;
+    line-height: 100px;
+    font-weight: 400;
+}
+/*清除input样式*/
+#page_meet input{
+    border: none;
+    background: none;
+    /*清楚默认样式*/
+    appearance:none;
+    -moz-appearance:none;
+    -webkit-appearance:none;
+}
+#page_meet input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+#page_meet input::-webkit-outer-spin-button {
+    -webkit-appearance: none;	/* 有无看不出差别 */
+}
+
+/*邀请函样式*/
+#nav_2,
+#nav_3,
+#nav_31,
+#nav_4{
+    z-index: 999;
+}
+
+#nav_2{
+    position: fixed;
+    bottom:0px;
+    background: url("../images/invi_con/nav_2.png") no-repeat;
+    background-size: 100% 100%;
+    width: 640px;
+    height: 80px;
+}
+#nav_2>a{
+    display: block;
+    float: left;
+    height: 80px;
+    width: 320px;
+}
+#nav_31{
+    position: fixed;
+    bottom:0px;
+    background: url("../images/invi_con/nav_31.png") no-repeat;
+    background-size: 100% 100%;
+    width: 640px;
+    height: 80px;
+}
+#nav_31 a,
+#nav_3 a{
+    display: block;
+    float: left;
+    height: 80px;
+    width: 213.33px;
+}
+
+#nav_3{
+    position: fixed;
+    bottom:0px;
+    background: url("../images/invi_con/nav_3.png") no-repeat;
+    background-size: 100% 100%;
+    width: 640px;
+    height: 80px;
+}
+
+#nav_4 a{
+    display: block;
+    float: left;
+    height: 80px;
+    width: 160px;
+}
+
+#nav_4{
+    position: fixed;
+    bottom:0px;
+    background: url("../images/invi_con/nav_4.png") no-repeat;
+    background-size: 100% 100%;
+    width: 640px;
+    height: 80px;
+}
+
+
+
+
+/*==================================*/
+/*==============edit.html==========*/
+/*==================================*/
+#page_edit{
+    position: absolute;
+    background-size: 100% 100%;
+    width: 640px;
+    min-height: 960px;
+    height: 100%;
+    background-color:#6BC8F2;
+    overflow: scroll;
+}
+#page_edit #h{
+    background: url("../images/edit/edit_h.png") no-repeat;
+    width: 640px;
+    height: 132px;
+}
+#page_edit #h a{
+    display: block;
+    width: 45px;
+    height: 45px;
+    position: absolute;
+    right: 27px;
+    top: 31px;
+}
+#page_edit #form{
+    width: 604px;
+    height: auto;
+    min-height: 800px;
+    position: relative;
+    background-color: rgba(255,255,255,0.3);
+    margin-left: 18px;
+    margin-top: 20px;
+    border-radius: 20px;
+}
+#page_edit #form .list{
+    position: absolute;
+    display: block;
+    width: 120px;
+    height: 48px;
+    margin-top: 30px;
+    margin-left: -120px;
+    /*font*/
+    line-height: 48px;
+    font-size: 21px;
+    font-weight: 600;
+    color: #0D78BB;
+}
+#page_edit #form form{
+    position: relative;
+    width: 400px;
+    height: auto;
+    /*top:110px;*/
+    top: 60px;
+    margin-bottom: 110px;
+    margin-left: 160px;
+}
+#page_edit #form form #submit{
+    border: none;
+    background: url("../images/edit/edit_ok.png");
+    width: 511px;
+    height: 53px;
+    margin-top: 50px;
+
+    margin-left: -120px;
+}
+
+#page_edit #form form .input{
+    background: white;
+    border: none;
+    border-radius: 10px;
+    width: 400px;
+    height: 48px;
+    margin-top: 30px;
+    /*font*/
+    font-size: 24px;
+    color: #888888;
+    text-indent: 10px;
+    /*清楚默认样式*/
+    appearance:none;
+    -moz-appearance:none;
+    -webkit-appearance:none;
+}
+#page_edit #form form .input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+#page_edit #form form .input::-webkit-outer-spin-button {
+    -webkit-appearance: none;	/* 有无看不出差别 */
+}
+
+#page_edit #form .e_error span{
+    display: block;
+    width: 100%;
+    height: 30px;
+    font-size: 18px;
+    color: #0D78BB;
+    text-align: center;
+}
+
+
+/*==========================================================*/
+/*==========================================================*/
+/*==========================================================*/
+
+.container{
+    width: 640px;
+    height: 350px;
+    position:fixed;
+    bottom: 0px;
+    left: 0px;
+    background: ghostwhite;
+}
+.selected{
+    width: 640px;
+    height:80px;
+    border-bottom: 1px solid #4d4d4d;
+    position: absolute;
+    margin-top: 0px;
+    /*font*/
+    color: #5a5a5a;
+    text-align: center;
+    font-size: 26px;
+    line-height: 80px;
+}
+.select_con{
+    width: 640px;
+    height: 250px;
+    position:fixed;
+    bottom: 0px;
+    background: ghostwhite;
+    overflow: scroll;
+    list-style: none;
+    text-indent: 20px;
+    line-height: 37px;
+    /*font*/
+    color: #888888;
+    font-size: 24px;
+}
+
+
+
+
+
+
+/*==================================*/
+/*==============home.html==========*/
+/*==================================*/
+#page_home{
+    position: absolute;
+    width: 640px;
+    height: 100%;
+    background: #EAF6FC;
+    z-index:2;
+}
+#page_home #title{
+    position: relative;
+    background: url("../images/home/tit.png");
+    background-size: 100% 100%;
+    width: 640px;
+    height: 232px;
+}
+#page_home #title a{
+    display: block;
+    position: absolute;
+    width: 54px;
+    height:47px;
+    margin-top: 30px;
+    right: 26px;
+}
+#page_home #title span{
+    display: block;
+    position: absolute;
+    margin-top: 82px;
+    width: 80px;
+    text-align: center;
+    right: 15px;
+    color:white;
+    font-size:18px
+}
+
+#page_home #model{
+    position: relative;
+    width: 590px;
+    height: 585px;
+    margin-top: 40px;
+    margin-left: 45px;
+    z-index: 999;
+    overflow: hidden;
+    overflow-y:scroll ;
+}
+#page_home .model{
+    display: block;
+    width: 260px;
+    height: 260px;
+    overflow: hidden;
+    border-radius: 15px;
+    float: left;
+    margin-right:30px;
+    margin-bottom:30px;
+}
+#page_home .model a{
+    position: absolute;
+    display: block;
+    width: 260px;
+    height: 260px;
+    border-radius: 15px;
+}
+#page_home .model img{
+    position: absolute;
+    border-radius: 15px;
+}
+#page_home .model span{
+    display: block;
+    position: absolute;
+    width: 260px;
+    height: 260px;
+    border-radius: 15px;
+    /*background-color:rgba(22,113,174,0.5);*/
+    background-color: rgba(136, 136, 136, 0.5);
+}
+#page_home .model span.active{
+    opacity: 0;
+}
+#page_home .model p{
+    position: absolute;
+    font-size: 21px;
+    margin-left: 20px;
+    margin-top: 20px;
+    color: white;
+}
+#page_home .model .tQ{
+    font-size: 32px;
+    margin-top: 50px;
+}
+#page_home #meeting{
+    display: block;
+    width: 510px;
+    height: 50px;
+    background-color: #1671AE;
+    text-decoration: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 26px;
+    line-height: 50px;
+    text-align: center;
+    margin-left: 65px;
+    margin-top: 45px;
+}
+/*==================================*/
+/*===========page_user.html=========*/
+/*==================================*/
+#page_user{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity:0.7;
+    z-index: 3;
+}
+#page_user #h{
+    background: url("../images/home/user_h.png") no-repeat;
+    background-size: 100% 100%;
+    height: 176px;
+    width: 640px;
+}
+#page_user #h .name{
+    font-size: 35px;
+    color: white;
+    display: block;
+    margin-top: 88px;
+    margin-left: 158px;
+    position: absolute;
+}
+#page_user #lis{
+    background: url("../images/home/user_lis.png") no-repeat;
+    background-size: 100% 100%;
+    width: 57px;
+    height: 373px;
+    margin-top: 60px;
+    margin-left: 60px;
+    position: absolute;
+}
+#page_user ul{
+    display: block;
+    position: absolute;
+    width: 433px;
+    height: auto;
+    margin-top: 66px;
+    margin-left: 120px;
+}
+#page_user ul li{
+    display: block;
+    list-style: none;
+    width: 433px;
+    height: 50px;
+    line-height: 50px;
+    margin-top: 0px;
+    margin-bottom:30px;
+    border-bottom: 1px solid #0D78BB;
+    font-size: 27px;
+}
+#page_user a{
+    display: block;
+    background: url("../images/home/user_exit.png") no-repeat;
+    background-size: 100% 100%;
+    width: 510px;
+    height:53px;
+    margin: 0px auto;
+    margin-top: 570px;
+}
+
+
+
+
+/*==================================*/
+/*==============meet.html==========*/
+/*==================================*/
+#page_meet{
+    position: absolute;
+    background-color: #6BBEE5;
+    width: 640px;
+    min-height:1095px;
+    height: 100%;
+    overflow: hidden;
+}
+#page_meet #tip{
+    background: url("../images/meet/mh.png") no-repeat;
+    background-size: 100% 100%;
+    width: 640px;
+    height: 128px;
+}
+#page_meet #tip a{
+    display: block;
+    width: 45px;
+    height: 45px;
+    position: absolute;
+    right: 27px;
+    top: 31px;
+}
+#page_meet #meet_con{
+    position: relative;
+    width:560px;
+    height: 940px;
+    background-color: rgba(255,255,255,0.5);
+    border-radius: 20px;
+    margin-left: 65px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+#page_meet #meet_con #search{
+    background: url("../images/meet/search.png");
+    width: 443px;
+    height: 44px;
+    position: relative;
+    top: 40px;
+    left: 70px;
+}
+#page_meet #meet_con input{
+    position: absolute;
+    width: 370px;
+    height: 38px;
+    margin-top: 3px;
+    margin-left: 18px;
+    color:#898988;
+    font-size: 21px;
+}
+#page_meet #meet_con #submit{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    /*background: red;*/
+    border-radius: 50px;
+    right: 5px;
+}
+#page_meet #meet_con ul{
+    position: absolute;
+    display: block;
+    width: 485px;
+    height: 770px;
+    margin-left: 72px;
+    margin-top: 70px;
+    /*background: red;*/
+    overflow-y: scroll;
+    overflow-x: hidden;
+
+
+}
+#page_meet #meet_con li{
+    display: block;
+    width: 485px;
+    height: 115px;
+    list-style: none;
+    float: left;
+    border-bottom: 1px solid #6BBEE5;
+}
+#page_meet #meet_con .info .link{
+    width: 320px;
+    height: 80px;
+    display: block;
+    position: absolute;
+    margin-top: 20px;
+    z-index: 9;
+}
+
+#page_meet #meet_con .info .tit{
+    position: absolute;
+    width: 320px;
+    font-size: 24px;
+    color: #004098;
+    margin-top: 20px;
+}
+#page_meet #meet_con .info .t{
+    display: block;
+    position: absolute;
+    width: 320px;
+    float: left;
+}
+#page_meet #meet_con .info .ewm{
+    display: block;
+    position: absolute;
+    float: right;
+    margin-left: 410px;
+}
+#page_meet #meet_con .info .ewm img{
+    display: block;
+    position: absolute;
+}
+#page_meet #meet_con .info .count{
+    position: absolute;
+    margin-top: 70px;
+}
+#page_meet #meet_con .info .count td{
+    display:block;
+    width: 110px;
+    float: left;
+    color: #4f4b4a;
+    font-size: 19px;
+}
+#page_meet #meet_con .info .count td span{
+    font-size: 19px;
+    font-weight: 500;
+}
+#page_meet #meet_con .info .count .time{
+    line-height: 24px;
+}
+#page_meet #meet_con .info .count .id{
+    margin-left: 70px;
+    width: auto!important;
+}
+
+/*没有会议*/
+#page_meet #meet_con .nomeet{
+    position: absolute;
+    margin-top: 200px;
+    margin-left: 50px;
+    background: url("../images/meet/nomeet.png") no-repeat;
+    background-size: 100% 100%;
+    width: 358px;
+    height: 386px;
+}
+
+/*header第一行统计信息*/
+/*--------------------------------------------------------------------------*/
+#page_meet #meet_con .me{
+    /*border-bottom: 1px solid #004098;*/
+    height: 150px;
+    background: url("../images/meet/me.png") no-repeat top left;
+}
+#page_meet #meet_con .me .name,
+#page_meet #meet_con .me .my_meet{
+    margin-left: 110px;
+    font-size: 23px;
+    color: #004098;
+    font-weight: 700;
+}
+#page_meet #meet_con .me .name{
+    margin-bottom: 15px;
+    font-size: 35px!important;
+}
+#page_meet #meet_con .me table{
+    margin-top: 5px;
+    margin-left: 110px;
+    font-size: 22px;
+    color: #004098;
+    font-weight: 700;
+}
+#page_meet #meet_con .me table td{
+    display: block;
+    float: left;
+    margin-right: 20px;
+}
+#page_meet #meet_con .me table span{
+    font-size:21px;
+}
+
+/*--------------------------------------------------------------------------*/
+#page_meet #meet_con .header{
+    border-bottom: 1px solid #004098;
+}
+#page_meet #meet_con .header .tit{
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    font-size: 29px;
+    color: #004098;
+    font-weight: bolder;
+}
+#page_meet #meet_con .header .count{
+    position: absolute;
+    margin-top: 10px;
+}
+#page_meet #meet_con .header .count td{
+    display:block;
+    width: 120px;
+    height: 37px;
+    line-height: 37px;
+    float: left;
+    color: #3E3A39;
+    font-size: 18px;
+}
+#page_meet #meet_con .header .count td span{
+    font-size: 23px;
+    font-weight: bold;
+}
+#page_meet #meet_con .header .count .all_meet{
+    font-size: 23px;
+    font-weight: bold;
+}
+
+/*会议信息分类栏*/
+#page_meet #classify{
+    background: url("../images/meet/classify.png") repeat-y;
+    width: 340px;
+    height: 100%;
+    position: absolute;
+    margin-top: -18px;
+    margin-left: -250px;
+    border: none;
+    /*font*/
+    line-height: 50px;
+    font-size: 23px;
+}
+#page_meet #classify #cBtn{
+    width: 105px;
+    height: 211px;
+    position: absolute;
+    margin-left: 231px;
+    margin-top: 710px;
+}
+
+#page_meet #classify #center,
+#page_meet #classify #area,
+#page_meet #classify #province{
+    margin-top: 60px;
+}
+#page_meet #classify li{
+    display: block;
+    width: 243px;
+    height: 52px;
+    overflow: hidden;
+    /*font*/
+    font-size: 25px;
+    text-indent: 30px;
+    color: #004098;
+    font-weight: bold;
+}
+#page_meet #classify li .icon{
+    position: absolute;
+    background: url("../images/meet/cicon.png") no-repeat;
+    width: 37px;
+    height: 29px;
+    right: 120px;
+    margin-top:10px;
+}
+
+#page_meet #classify li .ani{
+    animation:animate .6s forwards;
+    -webkit-animation:animate .6s forwards;
+}
+
+@keyframes animate{
+    from{
+        transform:rotate(0deg);
+        -ms-transform:rotate(0deg); /* Internet Explorer */
+        -moz-transform:rotate(0deg); /* Firefox */
+        -webkit-transform:rotate(0deg); /* Safari 和 Chrome */
+        -o-transform:rotate(0deg); /* Opera */
+    }
+    to{
+        transform:rotate(180deg);
+        -ms-transform:rotate(180deg); /* Internet Explorer */
+        -moz-transform:rotate(180deg); /* Firefox */
+        -webkit-transform:rotate(180deg); /* Safari 和 Chrome */
+        -o-transform:rotate(180deg); /* Opera */
+    }
+}
+@-webkit-keyframes animate{
+    from{
+        transform:rotate(0deg);
+        -ms-transform:rotate(0deg); /* Internet Explorer */
+        -moz-transform:rotate(0deg); /* Firefox */
+        -webkit-transform:rotate(0deg); /* Safari 和 Chrome */
+        -o-transform:rotate(0deg); /* Opera */
+    }
+    to{
+        transform:rotate(180deg);
+        -ms-transform:rotate(180deg); /* Internet Explorer */
+        -moz-transform:rotate(180deg); /* Firefox */
+        -webkit-transform:rotate(180deg); /* Safari 和 Chrome */
+        -o-transform:rotate(180deg); /* Opera */
+    }
+}
+
+
+#page_meet #classify li .lev{
+    border-bottom: 1px solid #6BC8F2;
+}
+#page_meet #classify li a{
+    display: block;
+    width: 213px;
+    height: 50px;
+    line-height: 50px;
+    margin-left: 30px;
+    border-bottom: 1px solid #0D78BB;
+    /*font*/
+    text-decoration: none;
+    text-indent: 0px;
+    color:#0D78BB;
+}
+/*------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------*/
+
+#page_ewm {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    min-height: 1095px;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 999;
+}
+#page_ewm #con{
+    background: url("../images/meet/ewmbg.png") no-repeat;
+    width: 534px;
+    height: 724px;
+    position: relative;
+    margin: 0px auto;
+    margin-top: 170px;
+
+}
+#page_ewm #con img {
+    display: block;
+    position: absolute;
+    margin-left:113px;
+    margin-top: 140px;
+}
+#page_ewm #con .id{
+    display: block;
+    width: 100%;
+    text-align: center;
+    position:absolute;
+    color: white;
+    font-size: 40px;
+    margin-top: 500px;
+}
+#page_ewm #con .close{
+    width: 70px;
+    height: 70px;
+    border-radius: 70px;
+    position: absolute;
+    bottom:58px;
+    left: 232px;
+}
+/*==================================*/
+/*===========meet_info.html==========*/
+/*==================================*/
+#page_meetinfo{
+    width: 640px;
+    height: 100%;
+    background-color: #ECF9FF;
+    position: absolute;
+}
+#page_meetinfo #h{
+    background: url("../images/meetinfo/minfobg.png");
+    width: 640px;
+    height: 206px;
+}
+#page_meetinfo #h p{
+    display: block;
+    position: absolute;
+    height: 40px;
+    width: 640px;
+    line-height: 40px;
+    font-size: 35px;
+    color: white;
+    text-align: center;
+    margin-top:50px;
+}
+#page_meetinfo #h .count{
+    display: block;
+    position: absolute;
+    height: 40px;
+    width: 640px;
+    line-height: 40px;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    margin-top:100px;
+}
+#page_meetinfo table{
+    display: block;
+    position: relative;
+    width: 593px;
+    height: 553px;
+    overflow: hidden;
+    overflow-y: scroll;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    margin-left: 26px;
+}
+
+#page_meetinfo .show{
+    background: url("../images/meetinfo/noinfo.png");
+    width: 320px;
+    height: 340px;
+    position: absolute;
+    margin-top: 120px;
+    margin-left: 160px;
+    z-index: 99;
+}
+
+#page_meetinfo table tr{
+    display: block;
+    position: relative;
+    width: 880px;
+    height: 49px;
+    background-color: white;
+    border-bottom: 1px solid #888;
+    border-right: 1px solid #888;
+    overflow: hidden;
+}
+#page_meetinfo table tr td{
+    display: block;
+    position: relative;
+    float: left;
+    height: 49px;
+    /*font*/
+    font-size: 18px;
+    line-height: 49px;
+    color: #414651;
+    text-align: center;
+    white-space: nowrap;
+    overflow-x: scroll;
+    border-right:1px solid #888;
+}
+#page_meetinfo table .comp,
+#page_meetinfo table .name,
+#page_meetinfo table .come,
+#page_meetinfo table .num,
+#page_meetinfo table .tel{
+
+    /*border-right:1px solid #888;*/
+}
+#page_meetinfo table .num{
+    width: 50px;
+}
+#page_meetinfo table .comp{
+    width: 235px;
+}
+#page_meetinfo table .name{
+    width: 108px;
+}
+#page_meetinfo table .come{
+    width: 50px;
+}
+#page_meetinfo table .tel{
+    width: 142px;
+}
+#page_meetinfo table .email{
+    width: 288px;
+}
+
+#page_meetinfo table .yes{
+    background: url("../images/meetinfo/come.png") no-repeat;
+    background-position: 33px -10px;
+}
+#page_meetinfo table .no{
+    background: url("../images/meetinfo/come.png") no-repeat;
+    background-position: 33px -77px;
+}
+
+#page_meetinfo table .header td{
+    color: #0D78BB!important;
+}
+#page_meetinfo table .num{
+    border-left:1px solid #888;
+}
+#page_meetinfo table .header{
+    border-top: 1px solid #888;
+}
+
+#page_meetinfo #warn{
+    position: relative;
+    width: 640px;
+    /*height: 160px;*/
+    height: 308px;
+    background: red;
+    bottom: 0px;
+    background-color: #FFFFFF;
+    border-top:1px solid #888888;
+}
+#page_meetinfo #warn #text{
+    position: absolute;
+    margin-top: 30px;
+}
+#page_meetinfo #warn p{
+    display: block;
+    width: 640px;
+    height: 37px;
+    font-size: 21px;
+    color: #999999;
+    text-align: center;
+    line-height: 37px;
+}
+#page_meetinfo #warn a{
+    display: block;
+    background: url("../images/meetinfo/close.png");
+    width: 79px;
+    height: 80px;
+    margin: 0px auto;
+    margin-top: 160px;
+}
+
+#all_info #less{
+    background: url("../images/meetinfo/noclick.png");
+    width: 95px;
+    height:255px;
+    position: absolute;
+    right: -2px;
+    top:350px;
+    z-index: 999;
+    opacity: 0.5;
+}
+#all_info #more{
+    background: url("../images/meetinfo/click.png");
+    width: 95px;
+    height:255px;
+    position: absolute;
+    right: -2px;
+    top:350px;
+    opacity: 0;
+    z-index: 999;
+}
+
+
+
+
+
+/*==================================*/
+/*=============join_ok.html==========*/
+/*==================================*/
+#page_joinok #con{
+    background: url("../images/join/join_ok.png") no-repeat;
+    background-size: 100%;
+    width:534px;
+    height:856px;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 80px;
+}
+#page_joinok #con a{
+    display: block;
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    border-radius: 35px;
+    bottom:9px;
+    left: 234px;
+}
+/*==================================*/
+/*=============live_join.html========*/
+/*==================================*/
+#page_live_join,
+#page_live_joinok{
+    position: absolute;
+    width: 640px;
+    height: 100%;
+    overflow: hidden;
+    overflow-y:scroll ;
+    background: url("../images/share/bg2.png") no-repeat;
+    background-size: cover;
+}
+#page_live_join .live_h,
+#page_live_joinok .live_h{
+    background: url("../images/join/liveh.png");
+    background-size: 100% 100%;
+    width: 426px;
+    height: 56px;
+    position: relative;
+    margin: 0 auto;
+    top: 100px;
+}
+#page_live_join #sign{
+    background-color:rgba(107,200,242,0.7);
+    border-radius: 15px;
+    width: 513px;
+    /*min-height: 636px;*/
+    height: auto;
+    position: absolute;
+    left: 68.5px;
+    margin-top:150px;
+}
+#page_live_join #sign #sign_t{
+    background: url("../images/sign/sign_t.png") no-repeat;
+    background-size: 100% 100%;
+    width: 514px;
+    height: 82px;
+    position: relative;
+    margin-bottom: 30px;
+}
+#page_live_join form{
+    position: relative;
+    width: 437px;
+    height: auto;
+    margin-top: 0px;
+    margin-left: 36px;
+}
+#page_live_join form .input{
+    width:377px;
+    height:47px;
+    border: 0px;
+    margin-top: 16px!important;
+    margin-left: 58px;
+    margin-top: 1.7px;
+    border-radius: 0px 10px 10px 0px;
+    /*font*/
+    font-size: 21px;
+    line-height: 47px;
+    text-indent: 10px;
+    white-space: nowrap;
+    overflow-x: scroll;
+    border: 1px solid #888888;
+    border-left:0px!important ;
+}
+#page_live_join form #name,
+#page_live_join form #company,
+#page_live_join form #email,
+#page_live_join form #tel{
+    display: block;
+    width: 55px;
+    height: 47px;
+    margin-top: -49px;
+    margin-left: 4px;
+    border-radius: 10px 0px 0px 10px;
+    border: 1px solid #888888;
+    border-right:0px!important ;
+}
+#page_live_join form #name{
+    background: url("../images/join/join_user.png");
+}
+#page_live_join form #company{
+    background: url("../images/join/join_comp.png");
+}
+#page_live_join form #email{
+    background: url("../images/join/join_email.png");
+}
+#page_live_join form #tel{
+    background: url("../images/join/join_tel.png");
+}
+
+#page_live_join form .submit{
+    position: relative;
+    border: none;
+    background: none;
+    display: block;
+    background: url("../images/sign/submit.png");
+    background-size: 100% 100%;
+    width: 151px;
+    height: 61px;
+    margin-left: 145.5px;
+    margin-bottom: 80px;
+}
+#page_live_join #info{
+    position: relative;
+    display: block;
+    width: 437px;
+    height: 50px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    font-size: 17px;
+    line-height: 27px;
+    color:white;
+}
+/*==================================*/
+/*=============live_join_ok.html========*/
+/*==================================*/
+#page_live_joinok #con{
+    background: url("../images/join/live_ok.png");
+    background-size: 100% 100%;
+    width: 523px;
+    height: 713px;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 160px;
+}
+#page_live_joinok #con a{
+    position:absolute;
+    display: block;
+    width: 170px;
+    height: 50px;
+    bottom: 7px;
+    left: 177px;
+}
+
+/*==================================*/
+/*=============signin.html==========*/
+/*==================================*/
+#page_signin{
+    position: absolute;
+    background: url("../images/share/bg2.png") no-repeat center center;
+    background-size: 100% 100%;
+    width: 640px;
+    height: 100%;
+}
+#page_signin #con{
+    background: url("../images/signin/signok.png") no-repeat;
+    background-size: 100% 100%;
+    width: 527px;
+    height: 850px;
+    position: relative;
+    margin: 0px auto;
+    margin-top: 60px;
+}
+#page_signin #con a{
+    display: block;
+    position: absolute;
+    width: 170px;
+    height: 51px;
+    bottom: 13px;
+    left: 178px;
+}
+
+
+
+/*=====================================================================================*/
+/*=====================================================================================*/
+/*=====================================================================================*/
+/*=====================================================================================*/
+*{
+    margin:0px;
+    padding:0px;
+}
+html,body{
+    width: 640px;
+    height: 100%;
+}
+.error{
+    border:1px solid red!important;
+}
+
+.errorlist li{
+    margin-bottom: 5px;
+    color: #ff2327;
+    font-size: 17px;
+    display: block;
+    text-indent: 0px;
+    list-style: none;
+    margin-left: 20px;
+    margin-top: 14px;
+}
+#page_edit .errorlist li{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+/*==================================*/
+/*==========loading.html==========*/
+/*==================================*/
+#page_loading{
+    position: absolute;
+    width: 640px;
+    height: 100%;
+}
+#page_loading #circle{
+    position: absolute;
+    margin-top:410px;
+    margin-left: 215px;
+}
+#page_loading #circle #bg{
+    position: absolute;
+    background: url("../images/login/load_1.png") no-repeat;
+    width: 247px;
+    height: 293px;
+    margin-left: -21px;
+    margin-top: -225px;
+}
+/*==================================*/
+/*==========loaderror.html==========*/
+/*==================================*/
+#page_loaderr{
+    position: absolute;
+    width: 100%;
+}
+#page_loaderr #errImg{
+    position: relative;
+    background: url("../images/loaderror/error_1.png") no-repeat;
+    background-size: 100% 100%;
+    width: 356px;
+    height: 287px;
+    margin: 0px auto;
+    margin-top: 340px;
+}
+#page_loaderr a{
+    display: block;
+    background: url("../images/loaderror/error_btn.png") no-repeat;
+    background-size: 100% 100%;
+    width: 139px;
+    height: 48px;
+    position: relative;
+    margin: 0px auto;
+    margin-top: 30px;
+}
+
+/*==================================*/
+/*==============regist.html==========*/
+/*==================================*/
+/*----regist_ok.html---*/
+#page_regist #ok{
+    background: url("../images/regist/regist_ok.png") no-repeat;
+    background-size: 100% 100%;
+    width:528px;
+    height: 542.5px;
+    position: relative;
+    margin: 0px auto;
+    margin-top: 60px;
+}
+#page_regist #ok a{
+    display: block;
+    width: 142px;
+    height: 50px;
+    position: absolute;
+    bottom:53px;
+    left: 194px;
+}
+/*-----------------------*/
+#page_regist #form{
+    position: relative;
+    width: 512px;
+    height: auto;
+    min-height: 525px;
+    background: #EAF6FC;
+    margin: 0 auto;
+    margin-top: 70px;
+    border-radius: 15px;
+}
+
+#page_regist #form #fh{
+    position: absolute;
+    background: url("../images/regist/reg.png");
+    width: 513px;
+    height: 80px;
+}
+#page_regist #form form{
+    position: relative;
+    width: 437px;
+    height: auto;
+    top: 120px;
+    margin-left: 38px;
+}
+#page_regist .input{
+    width: 377px;
+    height: 50px;
+    margin-top:20px;
+    margin-left: 60px;
+    border-radius: 0px 5px 5px 0px;
+    text-indent: 10px;
+    white-space: nowrap;
+    overflow-x: scroll;
+    color:#898988;
+    font-size: 23px;
+    line-height: 50px;
+    background: white;
+    -webkit-appearance:none;
+    border: 1px solid #898988;
+    border-left: 0px;
+}
+/*清除默认的样式*/
+#page_regist .input::-webkit-outer-spin-button,
+#page_regist .input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+#page_regist #form #regist{
+    width: 139px;
+    height: 48px;
+    border: none;
+    background: none;
+    background: url("../images/regist/submit.png");
+    margin-top: 50px;
+    margin-bottom: 170px;
+    margin-left: 149px;
+    border-radius: 5px;
+    position: relative;
+}
+
+#page_regist label{
+    position: relative;
+    display: block;
+    width: 437px;
+    height: auto;
+    margin-top: 20px;
+    margin-left: 20px;
+    color: red;
+    font-size: 16px;
+}
+/*==================================*/
+/*==============login.html==========*/
+/*==================================*/
+#page_login{
+    position: absolute;
+    width: 640px;
+    height: 100%;
+    overflow: hidden;
+}
+#page_login header img{
+    display: block;
+    height: 100%;
+    margin-left: 0%;
+}
+#page_login #form{
+    position: relative;
+    width: 512px;
+    height: auto;
+    /*max-height: 600px;*/
+    /*min-height: 525px;*/
+    background: #EAF6FC;
+    margin: 0 auto;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    border-radius: 15px;
+}
+#page_login #form #fh{
+    position: absolute;
+    background: url("../images/login/log_1.png");
+    width: 513px;
+    height: 80px;
+}
+#page_login #form form{
+    position: relative;
+    width: 437px;
+    height: auto;
+    top: 90px;
+    margin-left: 38px;
+}
+#page_login .input{
+    width: 377px;
+    height: 50px;
+    margin-top:20px;
+    margin-left: 60px;
+    border-radius: 0px 5px 5px 0px;
+    text-indent: 10px;
+    white-space: nowrap;
+    overflow-x: scroll;
+    color:#898988;
+    font-size: 22px;
+    line-height: 50px;
+    background: white;
+    -webkit-appearance:none;
+    border: 1px solid #898988;
+    border-left: 0px!important;
+}
+#page_login #remember{
+    position: relative;
+    top: 50px;
+}
+#page_login #id,
+#page_regist #id{
+    display: block;
+    background: url("../images/login/puticon_id.png") no-repeat center center;
+    margin-top: -52px;
+    background-size: cover;
+    width: 55px;
+    height: 50px;
+    margin-left: 5px;
+    border: 1px solid #898988;
+    border-right: 0px!important;
+    border-radius: 5px 0px 0px 5px;
+}
+#page_login #pwd,
+#page_regist #pwd,
+#page_regist #pwd2,
+#page_reset #pwd,
+#page_reset #pwd2{
+    display: block;
+    background: url("../images/login/puticon_pwd.png") no-repeat center center;
+    margin-top: -52px;
+    background-size: cover;
+    width: 55px;
+    height: 50px;
+    margin-left: 5px;
+    border: 1px solid #898988;
+    border-right: 0px!important;
+    border-radius: 5px 0px 0px 5px;
+}
+#page_regist #email,
+#page_forget #email{
+    display: block;
+    background: url("../images/login/puticon_email.png") no-repeat center center;
+    margin-top: -52px;
+    background-size: cover;
+    width: 55px;
+    height: 50px;
+    margin-left: 5px;
+    border: 1px solid #898988;
+    border-right: 0px!important;
+    border-radius: 5px 0px 0px 5px;
+}
+
+
+
+
+/*清除默认的样式*/
+#page_login .input::-webkit-outer-spin-button,
+#page_login .input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+#page_login #form #login{
+    width: 139px;
+    height: 48px;
+    border: none;
+    background: none;
+    background: url("../images/login/lbtn.png");
+    margin-top: 40px;
+    margin-bottom: 150px;
+    margin-left: 149px;
+    border-radius: 5px;
+    position: relative;
+}
+#page_login #find{
+    background:url("../images/regist/find.png") no-repeat;
+    width: 108px;
+    height: 84px;
+    position: relative;
+    left: 340px;
+    top:0px;
+}
+#page_login #find a{
+    position: inherit;
+    display: block;
+    width: 108px;
+    height: 30px;
+    margin-top:15px;
+}
+#page_login label{
+    position: absolute;
+    display: block;
+    background: url("../images/regist/remember.png") no-repeat;
+    width: 85px;
+    height: 27px;
+    margin-left:20px;
+    margin-top:25px;
+}
+/*==================================*/
+/*==============forget.html==========*/
+/*==================================*/
+#page_forget{
+    position: absolute;
+    width:640px;
+    height: 100%;
+}
+#page_forget #info{
+    display: block;
+    width: 513px;
+    position: relative;
+    margin-top: 40px;
+    line-height: 36px;
+    font-size: 24px;
+    color: #0D78BB;
+    text-align: center;
+}
+#page_forget #con{
+    position: relative;
+    background-color:rgba(107,200,242,0.2);
+    margin: 0 auto;
+    margin-top: 300px;
+    width: 514px;
+    min-height: 427px;
+    height: auto;
+    border-radius: 15px;
+}
+#page_forget #fh{
+    background: url("../images/regist/reset_h.png") no-repeat;
+    background-size:100% 100% ;
+    width: 514px;
+    height: 86px;
+}
+#page_forget .input{
+    width: 377px;
+    height: 50px;
+    margin-top:40px;
+    margin-left: 99px;
+    border-radius: 0px 5px 5px 0px;
+    text-indent: 10px;
+    white-space: nowrap;
+    overflow-x: scroll;
+    color:#898988;
+    font-size: 22px;
+    line-height: 50px;
+    background: white;
+    border: none;
+    -webkit-appearance:none;
+    border: 1px solid #898988;
+    border-left: 0px!important;
+}
+#page_forget .errorlist{
+    margin-left: 40px;
+    margin-top: 14px;
+}
+#page_forget #email{
+    margin-left: 46px;
+}
+#page_forget .submit{
+    background: url("../images/regist/e_submit.png");
+    background-size: 100% 100%;
+    width:139px;
+    height:48px;
+    border:none;
+    margin-top: 55px;
+    margin-left: 187px;
+    margin-bottom: 55px;
+}
+
+/*==================================*/
+/*==============forget_ok.html==========*/
+/*==================================*/
+#page_forget_ok{
+    position: absolute;
+    width:640px;
+    height: 100%;
+}
+#page_forget_ok #con{
+    background: url("../images/regist/forget_ok.png") no-repeat;
+    background-size: 100% 100%;
+    width: 524.5px;
+    height: 667px;
+    position: relative;
+    margin-top: 180px;
+    margin-left: 57.5px;
+}
+#page_forget_ok #con #again{
+    position: absolute;
+    display: block;
+    width: 209px;
+    height: 48px;
+    margin-top: 462px;
+    margin-left: 159px;
+}
+/*==================================*/
+/*==============reset.html==========*/
+/*==================================*/
+/*---------  reset_error  ---------------*/
+#page_reset #error{
+    background: url("../images/regist/reset_error.png") no-repeat;
+    background-size: 100% 100%;
+    width: 524.5px;
+    height: 428px;
+    position: relative;
+    margin: 0px auto;
+    margin-top: 300px;
+
+}
+
+/*-------------------*/
+#page_reset{
+    position: absolute;
+    width:640px;
+    height: 100%;
+}
+#page_reset #con{
+    width: 514px;
+    height: auto;
+    min-height: 414px;
+    position: relative;
+    background-color:rgba(107,200,242,0.2);
+    margin:0 auto;
+    margin-top: 285px;
+    border-radius: 15px;
+}
+#page_reset #con #errorInfo{
+    display: block;
+    width: 400px;
+    height: 260px;
+    text-indent: 30px;
+    margin-left: 60px;
+    margin-top: 30px;
+    /*font*/
+    font-size: 35px;
+    text-align: center;
+}
+
+#page_reset #con #fh{
+    background: url("../images/regist/reset_h2.png");
+    background-size: 100% 100%;
+    height: 88px;
+    width: 514px;
+
+}
+#page_reset #con ul li{
+    list-style: none;
+    display: block;
+    text-indent: 20px;
+    font-size: 18px;
+    color: red;
+    margin-top:10px ;
+    margin-left: 40px;
+}
+#page_reset #pwd,
+#page_reset #pwd2{
+    margin-left: 40px;
+}
+#page_reset .input{
+    width: 377px;
+    height: 50px;
+    margin-top:20px;
+    margin-left: 96px;
+    border-radius: 0px 5px 5px 0px;
+    text-indent: 10px;
+    white-space: nowrap;
+    overflow-x: scroll;
+    color:#898988;
+    font-size: 22px;
+    line-height: 50px;
+    background: white;
+    -webkit-appearance:none;
+    border: 1px solid #898988;
+    border-left: 0px!important;
+}
+#page_reset .input:first-child{
+    margin-top: 50px;
+}
+/*清除默认的样式*/
+#page_reset .input::-webkit-outer-spin-button,
+#page_reset .input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+#page_reset #submit{
+    background: url("../images/regist/r_submit.png") no-repeat;
+    background-size: 100% 100%;
+    border: none;
+    width:138.5px;
+    height: 48px;
+    margin-top: 50px;
+    margin-bottom: 55px;
+    margin-left: 188px;
+}
+/*==================================*/
+/*==============reset.html==========*/
+/*==================================*/
+#page_reset_ok{
+    position: absolute;
+    width:640px;
+    height: 100%;
+}
+#page_reset_ok #con{
+    background: url("../images/regist/reset_2.png") no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+    width: 250px;
+    height: 354px;
+    margin: 0px auto;
+    margin-top: 290px;
+
+}
+#page_reset_ok #con a{
+    display: block;
+    width: 139px;
+    height: 48px;
+    position: absolute;
+    margin-top: 298px;
+    margin-left: 59px;
+}
+
+/*----------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------*/
+/*时间选择插件*/
+
+body, div, ul, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td {
+    padding: 0;
+    margin: 0;
+}
+
+ul, li {
+    list-style: none;
+    list-style-type: none;
+}
+
+.page {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+#datescroll div {
+    float: left;
+    margin-left: 10%;
+    margin-top: 15px;
+    padding-right: 22px;
+}
+
+#yearwrapper {
+    position: absolute;
+    left: 0;
+    top: 45px;
+    bottom: 110px;
+    width: 100%;
+}
+
+#monthwrapper {
+    position: absolute;
+    left: 26%;
+    top: 45px;
+    bottom: 110px;
+    width: 80%;
+}
+
+#daywrapper {
+    position: absolute;
+    left: 50%;
+    top: 45px;
+    bottom: 110px;
+    width: 80%;
+}
+#yearwrapper ul li {
+    color: #898989;
+    font-size: 21px;
+}
+
+#monthwrapper ul li {
+    color: #898989;
+    font-size: 21px;
+}
+
+#daywrapper ul li {
+    color: #898989;
+    font-size: 21px;
+}
+
+#markyear {
+    position: relative;
+    margin-left: 76px;
+    top: -2px;
+}
+
+#markmonth {
+    position: relative;
+    margin-left: 40px;
+    top: -2px;
+}
+
+#markday {
+    position: relative;
+    margin-left: 42px;
+    top: -2px;
+}
+#dateheader {
+    width: 100%;
+    height: 50px;
+    background: #79C12F;
+    text-align: center;
+    color: #fff;
+    line-height: 50px;
+    font-size: 20px;
+}
+
+#setcancle ul {
+    text-align: center;
+    line-height: 30px;
+    margin: 1px auto;
+    font-size: 20px;
+}
+
+#setcancle ul li {
+    border-radius: 3px;
+    float: left;
+    width: 40%;
+    height: 30px;
+    list-style-type: none;
+    font-family: 'microsoft yahei';
+    font-size: 16px;
+}
+
+#dateconfirm {
+    position: absolute;
+    background: #79C12F;
+    left: 20px;
+    color: #fff;
+}
+
+#datecancle {
+    position: absolute;
+    background: #dcdddd;
+    right: 20px;
+    width: 40%;
+    color: #666;
+}
+
+#dateshadow {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #000;
+    filter: alpha(Opacity=50);
+    -moz-opacity: 0.5;
+    opacity: 0.5;
+}
+
+#datePage {
+    font-size: 22px;
+    border-radius: 3px;
+    position: absolute;
+    top: 340px;
+    MARGIN-RIGHT: auto;
+    vertical-align: middle;
+    MARGIN-LEFT: auto;
+    width: 640px;
+    height: 320px;
+    background: #FFFFFF;
+    z-index: 9999999;
+}
+
+#datetitle {
+    width: 100%;
+    height: 50px;
+    background: #ffffff;
+    text-align: center;
+    color: #888;
+    line-height: 50px;
+    font-size: 20px;
+    border-bottom: 1px solid #888;
+}
+
+#datetitle h1 {
+    font-weight: normal;
+}
+
+#datemark {
+    font-size: 22px;
+    left: 5%;
+    width: 90%;
+    height: 50px;
+    position: absolute;
+    top: 108px;
+    background: #eee;
+    border: 1px solid #eee;
+}
+
+#datescroll {
+    background: #F8F8F8;
+    width: 640px;
+    height: 200px;
+    text-align: center;
+    line-height: 50px;
+    overflow: hidden;
+}
+#yearwrapper ul, #monthwrapper ul, #daywrapper ul {
+    width: 40%;
+}
+
+#dateFooter {
+    width: 100%;
+    background: #fff;
+    height: 50px;
+    bottom: 0px;
+    position: absolute;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

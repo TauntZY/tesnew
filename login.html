@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta name="viewport" content="width=640,user-scalable=no">
+    <meta charset="UTF-8">
+    <title>登录</title>
+    <link rel="stylesheet" href="css/style.css?=20160726006"/>
+    <script src="js/lib/jquery.js"></script>
+    <script src="js/lib/circle-progress.js"></script>
+</head>
+<body>
+
+<div id="page_loading" style="display: none">
+    <div id="circle">
+        <div id="bg"></div>
+    </div>
+</div>
+<div id="page_login">
+        <header>
+            <img src="images/regist/reg_1.png" width="640" alt=""/>
+        </header>
+        <div id="form">
+            <div id="fh"></div>
+            <form action="">
+
+                <!--错误的话input 和后面的 span 都要加 error-->
+                <!--所有的错误都一样的形式展现-->
+                <input type="number" class="input error"  placeholder="工号"/>
+                <span id="id" class="error"></span>
+                <!--错误信息-->
+                <ul class="errorlist">
+                    <li></li>
+                </ul>
+
+                <input type="password" class="input" placeholder="密码"/>
+                <span id="pwd"></span>
+
+                <ul class="errorlist">
+                    <li></li>
+                </ul>
+
+                <!--记住密码，默认checked-->
+                <input type="checkbox" checked="checked" id="remember" style="width: 15px;height: 15px"/>
+                <label for="remember"></label>
+
+                <!--注册&找回密码-->
+                <div id="find">
+                    <a href="forget.html"></a>
+                    <a href="regist.html"></a>
+                </div>
+                <!--提交-->
+                <input type="submit" value="" id="login"/>
+            </form>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=640,user-scalable=no">
+    <title>邀请函制作</title>
+
+    <script src="js/lib/jquery.js"></script>
+    <script src="js/lib/city-picker.data.js"></script>
+    <script src="js/select_area.js"></script>
+    <script src="js/lib/date.js"></script>
+    <script src="js/lib/iscroll.js"></script>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <script type="text/javascript">
+        $(function(){
+            $('#beginTime').date();
+            $('#endTime').date({theme:"datetime"});
+        });
+    </script>
+
+</head>
+<body>
+    <div id="page_edit">
+        <div id="h">
+            <!--回到模板也-->
+            <a href="home.html"></a>
+        </div>
+        <div id="form">
+            <form action="invitation.html">
+
+                <!--错误的话input加上class = error  -->
+                <span class="list">会议时间:</span>
+                <input id="beginTime" class="input kbtn" type="text" readonly>
+                <ul class="errorlist">
+                    <li></li>
+                </ul>
+
+                <span class="list">会议场地:</span>
+                <input id="a_street" class="input" type="text">
+                <ul class="errorlist">
+                    <li></li>
+                </ul>
+
+                <span class="list">会议地区:</span>
+                <input id="a_area" class="input" type="text" readonly>
+                <ul class="errorlist">
+                    <li></li>
+                </ul>
+
+                <span class="list">详细地址:</span>
+                <input id="a_info" class="input" type="text">
+                <ul class="errorlist">
+                    <li></li>
+                </ul>
+
+
+                <span class="list">会 议 ID:</span>
+                <input id="a_id" class="input" type="number">
+                <ul class="errorlist">
+                    <li></li>
+                </ul>
+
+                <input id="id_province" type="hidden" >
+                <input id="id_city" type="hidden">
+
+                <input type="submit" id="submit" value="">
+            </form>
+
+            <!--如果已经制作过会议的显示-->
+            <div class="e_error">
+                <span>您已经制作过本活动的邀请函了，如需修改，</span>
+                <span>请进入【全部会议】里，点击相应的会议进行调整。</span>
+            </div>
+
+            <div class="container" style="display:none;">
+                <div class="selected">请选择会议所在地区</div>
+                <div class="select_con" id="select_con"></div>
+            </div>
+
+        </div>
+    </div>
+    <div id="datePlugin"></div>
+</body>
+</html>

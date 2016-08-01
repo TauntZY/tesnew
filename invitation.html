@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=640,user-scalable=no" >
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+	<title>邀请函</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="templates/2017q3/css/invitation.css"/>
+
+    <script src="js/lib/edge.6.0.0.min.js"></script>
+    <script src="js/lib/jquery.js"></script>
+    <script src="templates/2017q3/js/turn_page.js"></script>
+
+</head>
+<body>
+    <!--邀请函封面开始-->
+    <div id="page_inv_1" style="display: block;">
+        <div id="Stage1" class="page_invita">
+            <img src="templates/2017q3/images/invita_1.png" alt="" width="640px">
+        </div>
+    </div><!--邀请函封面结束-->
+
+    <!--会议信息页开始-->
+    <div id="page_inv_2" style="display: none">
+        <div id="Stage2" class="page_invita">
+            <div class="logo"></div>
+            <div id="form">
+                <div class="f_txt">
+                    <li>会议时间：</li>
+                    <li>会议场地：</li>
+                    <li>会议地址：</li>
+                </div>
+                <form action="">
+                    <!--此处input无法换行，使用 textarea 标签-->
+                    <span class="input" id="m_time" readonly >2016/7/21</span>
+                    <span class="input" id="m_addr" readonly >喜来登酒店会议大厅</span>
+                    <span class="input" id="m_area" readonly >北京北京市朝阳区金台路国贸三期宴会厅</span>
+                </form>
+            </div>
+
+            <div id="mt_info_t"></div>
+            <div id="mt_info"></div>
+        </div>
+    </div><!--会议信息页结束-->
+
+    <!--报名页面开始-->
+    <div id="page_inv_3" style="display: none">
+        <div id="Stage3" class="page_invita">
+            <!--报名-->
+            <div id="sign" style="display: block;">
+                <div id="sign_t"></div>
+                <form action="">
+
+                    <!--流览时设置为只读  -->
+
+                    <input type="text" class="input" placeholder="姓名" >
+                    <span id="name"></span>
+                    <ul class="errorlist">
+                        <li></li>
+                    </ul>
+
+                    <input type="text" class="input" placeholder="公司" >
+                    <span id="company"></span>
+                    <ul class="errorlist">
+                        <li></li>
+                    </ul>
+
+                    <input type="email" class="input" placeholder="邮箱" >
+                    <span id="email"></span>
+                    <ul class="errorlist">
+                        <li></li>
+                    </ul>
+
+                    <input type="tel" class="input" placeholder="手机" >
+                    <span id="tel"></span>
+                    <ul class="errorlist">
+                        <li></li>
+                    </ul>
+
+                    <!--提示填写真实信息-->
+                    <span id="info">请填写真实信息，以便第一时间接收戴尔渠道客户交流会的最新消息及相关资料</span>
+
+                    <input type="submit" class="submit" value="">
+
+                </form>
+            </div>
+        </div>
+    </div><!--报名页面结束-->
+
+    <div id="next"></div>
+
+
+    <!--最后看到的客户没有菜单栏-->
+
+    <!--两栏菜单开始，没有编辑权限-->
+    <div id="nav_2" style="display:none">
+        <a href="#" class="home"></a>
+        <a href="#" class="all_meeting"></a>
+    </div>
+    <!--两栏菜单结束-->
+
+
+    <!--三栏菜单开始，有编辑权限-->
+    <div id="nav_31" style="display:block">
+        <a href="#" class="home"></a>
+        <a href="#" class="share"></a>
+        <a href="edit.html" class="edit"></a>
+    </div>
+    <!--三栏菜单结束-->
+
+    <!--三栏菜单开始，有编辑权限和查看全部会议的权限-->
+    <div id="nav_3" style="display:block">
+        <a href="#" class="home"></a>
+        <a href="edit.html" class="edit"></a>
+        <a href="#" class="all_meeting"></a>
+    </div>
+    <!--三栏菜单结束-->
+
+    <!--四栏菜单开始，有编辑权限  查看全部会议的权限   查看会议数据权限-->
+    <div id="nav_4" style="display:block">
+        <a href="home.html" class="return"></a>
+        <a href="#" class="share"></a>
+        <a href="edit.html" class="edit"></a>
+        <a href="meet_info.html" class="info"></a>
+    </div>
+    <!--四栏菜单结束-->
+
+    <!--分享指示图-->
+    <div class="shareop"></div>
+
+    <script>
+        $(".share").click(function(){
+            $(".shareop").css({display:'block'});
+        });
+        $(".shareop").click(function(){
+            $(this).css({display:'none'});
+        });
+    </script>
+
+</body>
+</html>

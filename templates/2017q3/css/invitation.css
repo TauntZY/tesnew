@@ -1,0 +1,281 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+html,body{
+    width:100%;
+    height: 100%;
+    /*background: url('../images/share/bg.png') no-repeat;*/
+    background-size: cover;
+    overflow: hidden;
+}
+.error{
+    border:1px solid red!important;
+}
+
+.errorlist li{
+    margin-top: 10px;
+    color: red;
+    font-size: 16px;
+    display: block;
+    text-indent: 20px;
+    list-style: none;
+}
+#next{
+    z-index: 999;
+    background: url("../images/nexticon.png");
+    width: 51px;
+    height: 35px;
+    position: fixed;
+    bottom:90px;
+    left: 294.5px;
+    /*动画*/
+    animation: nextAni .8s infinite alternate;
+    -webkit-animation: nextAni .8s infinite alternate;
+}
+@keyframes nextAni {
+    from{bottom: 90px;opacity: 0;}
+    to{bottom: 140px;opacity: 1;}
+}
+@-webkit-keyframes nextAni {
+    from{bottom: 90px;opacity: 0;}
+    to{bottom: 140px;opacity: 1;}
+}
+
+
+
+/*分享*/
+.shareop{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url("../images/shareop.png") no-repeat;
+    background-size: cover;
+    display: none;
+    z-index: 999;
+}
+
+#page_inv_1,
+#page_inv_2,
+#page_inv_3{
+    position: absolute;
+    width: 640px;
+    height: 100%;
+    overflow: hidden;
+}
+#page_inv_1{
+    background: url("../../../images/share/bg.png");
+    background-size: 100% 100%;
+}
+#page_inv_2{
+    background: url("../../../images/share/bg2.png");
+    background-size: 100% 100%;
+    margin-top: 150%;
+}
+#page_inv_3{
+    background: url("../../../images/share/bg2.png");
+    background-size: 100% 100%;
+    margin-top: 150%;
+}
+
+
+.logo{
+    position: absolute;
+    background: url("../../../images/share/logo.png") no-repeat;
+    width: 229px;
+    height: 82px;
+    margin-top:30px;
+    margin-left: 20px;
+}
+#page_inv_2 #form{
+    position: absolute;
+    background: url("../images/formbg.png") no-repeat;
+    background-size: 100% 100%;
+    width: 563px;
+    height: 210px;
+    margin-top: 150px;
+    margin-left: 38px;
+}
+
+
+#page_inv_2 .input{
+    display: block;
+    background: none;
+    border: none;
+    height: 39px;
+    width: 375px;
+    background:none;
+    margin-bottom: 5px;
+    margin-left: 10px;
+    /*font*/
+    color: #888888;
+    white-space: normal;
+    overflow-x: scroll;
+    font-size: 23px;
+    line-height: 39px;
+}
+    /*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+/*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+/*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+#page_inv_2 .f_txt,
+#page_inv_2 form{
+    position: absolute;
+    width: 145px;
+    height: 160px;
+    /*background:red;*/
+    color: black;
+    margin-top: 25px;
+}
+#page_inv_2 .f_txt{
+    margin-left: 25px;
+}
+#page_inv_2 .f_txt li{
+    display: block;
+    width: 100%;
+    height: 39px;
+    margin-bottom: 5px;
+    /*font*/
+    text-indent: 25px;
+    font-size: 23px;
+    line-height: 39px;
+    /**/
+    background: url("../images/libg.png") no-repeat;
+    background-position: 6px 10px;
+}
+#page_inv_2 form{
+    width: 400px;
+    margin-left: 155px;
+}
+#page_inv_2 form #m_area{
+    height: 78px;
+    text-indent: 0px;
+    width: 365px;
+}
+#page_inv_2 #mt_info_t{
+    position: absolute;
+    background: url("../images/mt_info_t.png") no-repeat;
+    width: 550px;
+    height:47px ;
+    margin: 0 auto;
+    margin-top: 370px;
+    margin-left: 45px;
+}
+#page_inv_2 #mt_info{
+    position: absolute;
+    background: url("../images/mt_info.png");
+    background-size: 100% 100%;
+    width: 560px;
+    height: 490px;
+    margin-top: 430px;
+    margin-left: 42px;
+}
+
+
+/*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+/*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+/*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+#page_inv_3 #sign{
+    background: url("../../../images/sign/sign_bg.png") no-repeat;
+    background-size:cover;
+    width: 513px;
+    /*min-height: 636px;*/
+    height: auto;
+    position: absolute;
+    left: 68.5px;
+    top:100px;
+}
+#page_inv_3 #sign #sign_t{
+    background: url("../../../images/sign/sign_t.png") no-repeat;
+    width: 514px;
+    height: 82px;
+    position: relative;
+    margin-bottom: 50px;
+}
+#page_inv_3 form{
+    position: relative;
+    width: 437px;
+    height: auto;
+    margin-top: 0px;
+    margin-left: 36px;
+}
+#page_inv_3 form .input{
+    width:377px;
+    height:47px;
+    border: 0px;
+    margin-top: 30px!important;
+    margin-left: 58px;
+    margin-top: 1.7px;
+    /*font*/
+    font-size: 21px;
+    line-height: 47px;
+    text-indent: 10px;
+    white-space: nowrap;
+    overflow-x: scroll;
+}
+#page_inv_3 form #name,
+#page_inv_3 form #company,
+#page_inv_3 form #email,
+#page_inv_3 form #tel{
+    display: block;
+    width: 55px;
+    height: 47px;
+    margin-top: -47px;
+    margin-left: 4px;
+}
+#page_inv_3 form #name{
+    background: url("../../../images/join/join_user.png");
+}
+#page_inv_3 form #company{
+    background: url("../../../images/join/join_comp.png");
+}
+#page_inv_3 form #email{
+    background: url("../../../images/join/join_email.png");
+}
+#page_inv_3 form #tel{
+    background: url("../../../images/join/join_tel.png");
+}
+
+#page_inv_3 form .submit{
+    position: relative;
+    border: none;
+    background: none;
+    display: block;
+    background: url("../../../images/sign/submit.png");
+    width: 146px;
+    height: 56px;
+    margin-left: 145.5px;
+    margin-bottom: 80px;
+}
+#page_inv_3 #info{
+    position: relative;
+    display: block;
+    width: 437px;
+    height: 50px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 17px;
+    line-height: 27px;
+    color:white;
+}
+
+
+#page_inv_3 .close{
+    display: block;
+    position: absolute;
+    background: url("../images/close.png") no-repeat;
+    width: 90px;
+    height: 91px;
+    margin: 0px auto;
+}
+
+/*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+/*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+/*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+
+
+
+
+
+
+
+
